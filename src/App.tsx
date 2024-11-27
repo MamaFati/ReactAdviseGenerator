@@ -7,9 +7,9 @@ const App: React.FC = () => {
   //   queryFn:
   // });
   return (
-    <>
+    <div className="  ">
       <MainApp />
-    </>
+    </div>
   );
 };
 

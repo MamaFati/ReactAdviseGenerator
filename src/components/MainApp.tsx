@@ -1,5 +1,5 @@
 import { useEffect, useCallback, useState } from "react";
-// import Message from "./Message";
+ 
 import axios from "axios";
 import useAdviceStore from "../store/stateStore";
 
@@ -35,16 +35,16 @@ export default function MainApp() {
   };
 
   return (
-    <div className="text-center">
-      <h1 className="px-10">{advices[currentIndex]}</h1>
+    <div className="text-center  m-auto bg-black rounded">
+      <span className="text-green-600 font-serif text-4xl">ADVICE</span>
+      <h1 className="px-10">"{advices[currentIndex]}"</h1>
+      <hr />
       <button onClick={displayPrevAdvice} className="my-5">
         <h1>{"<"}</h1>
       </button>
       <button onClick={displayNextAdvice} className="my-5">
         <h1>{">"}</h1>
       </button>
-      {/* <Message /> */}
-      {/* // <AdviceHistory /> */}
     </div>
   );
 }
